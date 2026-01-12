@@ -1,6 +1,6 @@
 class Play extends Phaser.Scene {
 	constructor() {
-		super('play-scene');
+		super('play_scene');
 		console.log('Play: constructor');
 	}
 
