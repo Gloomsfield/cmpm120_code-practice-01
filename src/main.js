@@ -7,6 +7,7 @@
 let config = {
     type: Phaser.AUTO,
 	scene: [
+		MainMenu,
 		Play,
 	],
 }
