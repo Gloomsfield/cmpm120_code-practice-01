@@ -16,7 +16,12 @@ class MainMenu extends Phaser.Scene {
 	create() {
 		console.log('MainMenu: create');
 		
-		this.scene.start('play_scene');
+		let player_stats = {
+			hitpoints: this.hitpoints,
+			experience: this.experience,
+		};
+
+		this.scene.start('play_scene', player_stats);
 	}
 }
 
