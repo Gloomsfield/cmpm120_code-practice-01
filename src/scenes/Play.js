@@ -14,6 +14,7 @@ class Play extends Phaser.Scene {
 	create() {
 		console.log('Play: create');
 
-		console.log(`HP: ${this.hitpoints}`);
+		this.scene.add('stats-overlay_scene', StatsOverlay, false);
+		this.scene.launch('stats-overlay_scene');
 	}
 }
